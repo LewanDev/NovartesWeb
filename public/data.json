@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Funda almohadones",
+    "price": 1500,
+    "img" : "https://www.sueniolandia.com.ar/wp-content/uploads/2021/05/BJEFUN1P.jpg",
+    "stock" : 25
+  },
+  {
+    "id": 2,
+    "name": "Rinconero Dionisio",
+    "price": 239000,
+    "img" : "https://pedidosnovartes.com/pedidos/assets/img/products/30000170.jpg",
+    "stock" : 3
+  },
+  {
+    "id": 3,
+    "name": "Sofá Praga",
+    "price": 214500,
+    "img" : "https://sofaspremier.com/contenidos/blog/galeriaHD/img2023012112451252.jpg",
+    "stock" : 2
+  },
+  {
+    "id": 4,
+    "name": "Rinconero Boss",
+    "price": 315700,
+    "img" : "https://scontent.faep14-2.fna.fbcdn.net/v/t1.6435-9/118960839_173172864379710_5589246495786682011_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=106&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=iIcE7GF-d_AQ7kNvwFBJ8TX&_nc_oc=AdmS3XlTMuZCeq8qvtTaIKVnolpMxBnAuEtilQGI_8W97QvKPppVAq8unTcC8LWGwc0&_nc_zt=23&_nc_ht=scontent.faep14-2.fna&_nc_gid=nre_ZYQOhc-gztSzMpLCIw&oh=00_AfO4o0hHaX69DKZ3Ia5kE-R248XjOhDYnW_u1osPUxxVGA&oe=688634B2",
+    "stock" : 1
+  }
+]

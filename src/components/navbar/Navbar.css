@@ -1,0 +1,22 @@
+.nav-container {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: #FFF;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
