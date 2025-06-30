@@ -12,7 +12,7 @@ const Products = () => {
     fetch("data.json")
       .then((response) => response.json())
       .then((data) => setProducts(data));
-  });
+  }, []);
 
   /*
   //Consumiendo la API de novartes

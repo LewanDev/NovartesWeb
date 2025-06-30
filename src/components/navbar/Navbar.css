@@ -16,7 +16,15 @@
 }
 
 .navbar-logo {
-  justify-self: start;
-  margin-left: 20px;
+  flex-direction: row;
+  margin: 10px ;
   cursor: pointer;
+  width: 200px;
+}
+
+.navbar-cart-logo {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  
 }
