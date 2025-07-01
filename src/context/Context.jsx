@@ -1,14 +1,30 @@
-import { Children, createContext } from "react";
+import { createContext, useState } from "react";
 
-export const Context = createContext()
+export const Context = createContext();
 
-const ContextProvider = ({children}) => {
-  
-  return(
-    <Context.Provider value={{}}>
+const ContextProvider = ({ children }) => {
+  const [cart, setCart] = useState([]);
+
+  const addProduct = (product) => {
+    const productExists = cart.find((item) => item.id === product.id);
+    if (productExists) {
+      setCart(
+        cart.map((item) =>
+          item.id === product.id
+            ? { ...item, quanty: item.quanty + 1 }
+            : item
+        )
+      );
+    } else {
+      setCart([...cart, { ...product, quanty: 1 }]);
+    }
+  };
+
+  return (
+    <Context.Provider value={{ cart, setCart, addProduct }}>
       {children}
     </Context.Provider>
-  )
-}
+  );
+};
 
-export default ContextProvider
+export default ContextProvider;

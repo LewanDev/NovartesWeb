@@ -1,0 +1,33 @@
+.product-card-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px;
+  background-color: aliceblue;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.product-card-container > img {
+  height: 120px;
+  width: 100px;
+  text-align: center;
+  object-fit: scale-down;
+}
+
+.cart-total {
+  text-align: center;
+}
+
+.cart-delete-product{
+  cursor: pointer;
+}
+
+.counter-button{
+  cursor: pointer;
+}
+
+.cart-message-center{
+  text-align: center;
+  font-style: italic;
+}

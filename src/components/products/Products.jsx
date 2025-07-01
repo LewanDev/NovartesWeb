@@ -1,8 +1,11 @@
-import { useState, useEffect } from "react";
-import "./Products.css"
+import { useContext, useState, useEffect } from "react";
+import { Context } from "../../context/Context";
+import "./Products.css";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+  const { addProduct } = useContext(Context);
+
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -41,16 +44,24 @@ const Products = () => {
   if (loading) return <div>Cargando...</div>;
   if (error) return <div>Error: {error}</div>;
 
-  return products.map((product) => {
-    return (
-      <div key={product.id} className="product-card">
-        <img src={product.img} alt="img-product-card" />
-        <h2>{product.name}</h2>
-        <h3>${product.price}</h3>
-        <button>Comprar</button>
-      </div>
-    );
-  });
+  return (
+    <div className="products-container">
+      {products.length === 0 && !loading ? (
+        <p>No products available</p>
+      ) : (
+        <>
+          {products.map((product) => (
+            <div key={product.id} className="product-card">
+              <img src={product.img} alt={product.name} />
+              <h2>{product.name}</h2>
+              <h3>${product.price}</h3>
+              <button onClick={() => addProduct(product)}>Comprar</button>
+            </div>
+          ))}
+        </>
+      )}
+    </div>
+  );
 };
 
 export default Products;
